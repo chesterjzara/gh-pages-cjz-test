@@ -1,0 +1,113 @@
+
+/* Title and Header Styling */
+h1 {
+    text-align: center;
+    border: 1px solid black;
+    padding: .75em 1em;
+    width: 65%;
+    margin: 0.67em auto;
+    font-size: 1rem;
+
+}
+
+/* Text Terminal Styling */
+.text-window {
+    height: 150px;
+    width: 100%;
+    border:1px solid black;
+    overflow:auto;
+    margin: 1em auto;
+}
+.text-window > p {
+    font-size: .8rem;
+    margin: 0.5em 0;
+
+}
+.text-window > p > span {
+    font-size: .8rem;
+    /* color: red; */
+}
+
+/* Score Dashboard */
+.score-components {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border: 1px solid black;
+    list-style: none;
+    padding: 0 1em;
+}
+
+/* Tool Area Styling */
+.tool-windows {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+.tool-windows > div {
+    border: 1px solid black;
+    width: 25%;
+}
+.tool-windows > div > * {
+    text-align: center;
+}
+.inventory-pane, .equipped-pane {
+    flex-grow: 1.2; 
+}
+.shop-container, .inventory-container, .equipped-container {
+    list-style: none;
+    padding: 0 0.5em;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.shop-container > li, .inventory-container > li, .equipped-container > li  {
+    height: 3em;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 0.5em 0;
+}
+.inventory-container > li {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.inventory-container > li > div {
+    /* border: 1px solid black; */
+    min-width: 1.25em;
+}
+.minus, .plus {
+    height: 2.75em;
+    line-height: 2.5em;
+}
+.minus {
+    background-color: red;
+}
+.plus {
+    background-color: green;
+}
+.tool-name {
+    flex-grow: 2;
+}
+
+
+
+
+/* Game control button styling  */
+.main-game-buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 1em;
+    margin: 0.5em 0 0 0;
+}
+.main-game-buttons > div {
+    border: 1px solid black;
+    height: 35px;
+}
+.game-button-text {
+    padding: 0.5em;
+    margin: auto auto;
+}
